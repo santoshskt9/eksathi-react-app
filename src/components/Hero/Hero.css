@@ -1,0 +1,35 @@
+.hero-title p{
+    font-size: 52px;
+    font-weight: bolder;
+}
+
+.hero-title p > span{
+    color: rgb(0, 128, 255);
+}
+
+.hero-description {
+    margin: 10px 0px;
+    padding-right: 25px;
+}
+
+.hero-description h4{
+    font-size: 20px;
+    color: grey;
+    font-weight: 100;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px;
+}
+
+.hero-actions {
+    margin: 31px 0px;
+}
+
+.hero-image {
+    padding: 25px;
+}

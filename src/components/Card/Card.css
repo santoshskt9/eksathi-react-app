@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+
+:root {
+    --poppins: "Poppins", sans-serif;
+    --lato: "Lato", sans-serif;
+    --oleo: "Oleo Script", cursive;
+  
+    --sooth: #40acd7;
+    --light: #e6e9f0;
+    --blue: #3c91e6;
+    --light-blue: #cfe8ff;
+    --grey: #a2bee3;
+    --dark-grey: #aaaaaa;
+    --dark: #342e37;
+    --red: #db504a;
+    --yellow: #ffce26;
+    --light-yellow: #fff2c6;
+    --orange: #f49b75;
+    --light-orange: #ffe0d3;
+    --light-grey: #f5f5f5;
+  }
+
+/* card animation */
+
+.card1B {
+    background-image: linear-gradient(43deg, blue, rgb(118, 0, 197));
+    background-color: #4158d0;
+    transform: rotateX(-180deg);
+  }
+  
+  .card2F {
+    background: url(../../resources/img/card2.png) no-repeat center;
+    background-size: cover;
+  }
+  
+  .card2B {
+    background-image: linear-gradient(-43deg, #c850c0 26%, #ffcc70 100%);
+    transform: rotateX(-180deg);
+  }
+  
+  .card3F {
+    background: url(../../resources/img/card3.png) no-repeat center;
+    background-size: cover;
+  }
+  
+  .card3B {
+    background-image: linear-gradient(-230deg, #c850c0 26%, #ffcc70 100%);
+    background-color: #4158d0;
+    transform: rotateX(-180deg);
+  }
+  
+  .card4F {
+    background: url(../../resources/img/card4.png) no-repeat center;
+    background-size: cover;
+  }
+  
+  .card4B {
+    background-image: linear-gradient(-190deg, var(--blue), var(--light-blue));
+    background-color: #4158d0;
+    transform: rotateX(-180deg);
+  }
+  
+  .infocard:hover .card1F {
+    transform: rotateX(180deg);
+  }
+  
+  .infocard:hover .card4F {
+    transform: rotateX(180deg);
+  }
+  
+  .infocard:hover .card2F {
+    transform: rotateX(180deg);
+  }
+  
+  .infocard:hover .card3F {
+    transform: rotateX(180deg);
+  }
+  
+  .infocard:hover .card1B {
+    transform: rotateX(0deg);
+  }
+  
+  .infocard:hover .card4B {
+    transform: rotateX(0deg);
+  }
+  
+  .infocard:hover .card2B {
+    transform: rotateX(0deg);
+  }
+  
+  .infocard:hover .card3B {
+    transform: rotateX(0deg);
+  }
+  
+  /* -------- */
+
+  .infocard {
+    perspective: 150rem;
+    position: relative;
+    height: 25rem;
+    max-width: 260px;
+    margin: 0.5rem;
+    box-shadow: none;
+    background: none;
+    border: none;
+  }
+  
+  .card-side {
+    height: 22rem;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 1rem;
+    color: white;
+  }
+  
+  .card-side h5 {
+    font-family: var(--poppins);
+    font-weight: 900;
+    color: var(--light);
+    writing-mode: vertical-lr;
+    -moz-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -ms-transform: scale(-1, -1);
+    transform: scale(-1, -1);
+    right: 34px;
+    top: 10px;
+    position: relative;
+  }
+  
+  .card1F {
+    background: url(../../resources/img/card1.png) no-repeat center;
+    background-size: cover;
+  }
+  
