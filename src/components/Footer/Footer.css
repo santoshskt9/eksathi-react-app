@@ -1,6 +1,6 @@
 .footer {
     
-    margin-left: 250px;
+    /* margin-left: 250px; */
     padding: 25px;
 }
 
@@ -10,7 +10,7 @@
     position: relative;
     /* left: 61px;
     width: calc(100% - 60px); */
-    margin-left: 250px;
+    /* margin-left: 250px; */
   }
   
   #footer i {

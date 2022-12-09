@@ -1,10 +1,8 @@
-import React from 'react'
-import Layout from '../../components/Layout/Layout';
+import React from 'react';
 
 const Supporters = () => {
   return (
     <React.Fragment>
-      <Layout/>
       <div className="pages">
         <h1>Our Supporter Page</h1>
       </div>

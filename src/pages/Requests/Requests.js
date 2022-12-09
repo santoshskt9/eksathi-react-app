@@ -12,7 +12,7 @@ const Requests = () => {
             <button className='btn btn-outline-success my-2 my-sm-0 h-50' style={{marginLeft: '10px'}}>Search</button>
          </form>
         </section>
-        <main className='container'>
+        <main className='container-fluid'>
           <div className="row">
           <section className='section result-section col col-8' style={{marginRight: '20px'}}>
             <div className="row d-flex justify-content-between">

@@ -15,6 +15,8 @@
   
   /* The navigation menu links */
   .nav-link {
+    display: flex !important;
+    align-items: center;
     padding: 8px 8px 8px 17px;
     text-decoration: none;
     font-size: 20px;
@@ -24,12 +26,38 @@
     margin: 10px 0px;
   }
 
+  .nav-link-collapse {
+    padding: 0px;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+  }
+
   .drawer-collapse {
+    height: 100%;
     width: 70px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f3f3f3;
+    overflow-x: hidden;
+    padding: 83px 10px 10px 10px;
+    transition: 0.5s;
+  }
+
+  .link-text{
+    display: none;
   }
 
   .icon {
     margin-right: 24px;
+    height: 33px;
+    width: auto;
+  }
+
+  .icon-collapse {
+    
     height: 33px;
     width: auto;
   }

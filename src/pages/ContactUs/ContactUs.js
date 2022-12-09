@@ -1,10 +1,8 @@
-import React from 'react'
-import Layout from '../../components/Layout/Layout';
+import React from 'react';
 
 const ContactUs = () => {
   return (
     <React.Fragment>
-      <Layout/>
       <div className="pages">
         <h1>Our Contact Us Page</h1>
       </div>

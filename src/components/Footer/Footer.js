@@ -4,7 +4,8 @@ import './Footer.css'
 const Footer = () => {
   return (
     <React.Fragment>
-      <section id="footer">
+      <div className="pages">
+      <section id="footer" className='section'>
         <h1>Join our supportive community</h1>
         <div className="row p-2">
           <div className="col-md-5 col-sm-12">
@@ -41,6 +42,7 @@ const Footer = () => {
           </div>
         </div>
       </section>
+      </div>
     </React.Fragment>
   )
 }
