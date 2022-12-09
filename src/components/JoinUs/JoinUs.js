@@ -27,7 +27,7 @@ const JoinUs = () => {
                     <input className="" type="email" placeholder="Email" />
                     <input className="" type="password" placeholder="Password" />
                     <button className="btn rounded  mt-4">Sign Up</button>
-                    <small className="mt-2">Already have an account <a onclick="login()" className="text-success">Sign
+                    <small className="mt-2">Already have an account <a className="text-success">Sign
                         In</a></small>
                   </form>
                 </div>

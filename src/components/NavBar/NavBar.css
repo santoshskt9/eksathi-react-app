@@ -9,3 +9,13 @@
 .drawer-ico {
     margin: 0px 10px;
 }
+
+.signin-model {
+    position: absolute;
+    top: 72px;
+    right: 12px;
+    width: 248px;
+}
+.hide {
+    display: none;
+}

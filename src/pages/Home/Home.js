@@ -8,6 +8,7 @@ import Process from '../../components/Process/Process';
 import QAList from '../../components/List/QAList';
 import Records from '../../components/Records/Records';
 import JoinUs from '../../components/JoinUs/JoinUs';
+import { Outlet } from 'react-router-dom';
 
 const cardData = [
 {
@@ -34,7 +35,6 @@ const cardData = [
 const Home = () => {
   return (
     <React.Fragment>
-        <Layout/>
         <div className="home pages">
           <Hero/>
           <section className='card-section'>

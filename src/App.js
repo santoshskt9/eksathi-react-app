@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.css';
-import Layout from './components/Layout/Layout';
-import Route from './route';
-import Home from './pages/Home/Home';
+import Routes from './mainRoutes';
+
 
 import SignUp from './pages/Auth/SignUp';
 
 function App() {
   return (
     <React.Fragment>
-      <SignUp/>
+      <Routes/>
     </React.Fragment>
   );
 }

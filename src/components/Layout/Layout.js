@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Drawer from '../Drawer/Drawer';
 import NavBar from '../NavBar/NavBar';
-import Page from '../Page/Page';
 
 const Layout = (props) => {
   const [stat, setStat] = useState(true);

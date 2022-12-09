@@ -14,11 +14,11 @@
   }
   
   /* The navigation menu links */
-  .sidenav a {
+  .nav-link {
     padding: 8px 8px 8px 17px;
     text-decoration: none;
     font-size: 20px;
-    color: #818181;
+    color: #2f005a;
     display: block;
     transition: 0.3s;
     margin: 10px 0px;
@@ -35,13 +35,13 @@
   }
   
   /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
+  .nav-link:hover {
     color: #5a0081;
     border-radius: 10px;
     background-color: gainsboro;
   }
 
-  .sidenav a:active {
+ .active {
     color: indigo;
     border-radius: 10px;
     background-color: lightgrey;
@@ -65,5 +65,5 @@
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .nav-link {font-size: 18px;}
   }

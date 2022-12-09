@@ -1,8 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
 const RegisterImg = require('../../resources/reg.png');
 
 const SignUp = () => {
+    const navigate = useNavigate();
   return (
     <React.Fragment>
         <section className="h-100 gradient-form" style={{backgroundColor: '#eee'}}>
@@ -16,7 +18,11 @@ const SignUp = () => {
 
                             <div className="text-center">
                             <img src="https://stage.eksathi.com/assets/img/eksathiLogo.png"
-                                style={{width: '185px'}} alt="logo"/>
+                                style={{width: '185px', cursor: 'pointer'}} alt="logo"
+                                onClick={() => {
+                                    navigate('/');
+                                }}
+                                />
                             <h4 className="mt-1 mb-5 pb-1">Lead to new possibilities</h4>
                             </div>
 
@@ -48,7 +54,11 @@ const SignUp = () => {
 
                             <div className="d-flex align-items-center justify-content-center pb-4">
                                 <p className="mb-0 me-2">Already have an account?</p>
-                                <button type="button" className="btn btn-outline-danger">Login</button>
+                                <button type="button" className="btn btn-outline-danger"
+                                    onClick={() => {
+                                        navigate('/auth/login');
+                                    }}
+                                >Login</button>
                             </div>
 
                             </form>
