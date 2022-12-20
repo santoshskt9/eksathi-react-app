@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="col-5">
               <ul>
                 <li>
-                  <h3>company</h3>
+                  <h3>Company</h3>
                 </li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Privacy Policy</a></li>

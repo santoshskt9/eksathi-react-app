@@ -3,7 +3,7 @@ import Drawer from '../Drawer/Drawer';
 import NavBar from '../NavBar/NavBar';
 
 const Layout = (props) => {
-  const [stat, setStat] = useState(true);
+  const [stat, setStat] = useState(false);
 
   const toggleStatus = (status) => {
     console.log(status);

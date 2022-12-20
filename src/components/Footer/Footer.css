@@ -48,3 +48,7 @@
     color: white;
     margin: 0;
   }
+
+  #footer li {
+    list-style: none;;
+  }

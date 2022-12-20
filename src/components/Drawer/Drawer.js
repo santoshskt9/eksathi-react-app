@@ -1,14 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Drawer.css';
 import {FaHome} from 'react-icons/fa';
 import {TiDocumentText} from 'react-icons/ti';
 import {BiGitPullRequest} from 'react-icons/bi';
 import {MdOutlinePeopleAlt, MdOutlineChat} from 'react-icons/md'; 
 import { NavLink } from 'react-router-dom';
+import RequestDialog from '../Dialog/RequestDialog';
 
 const Drawer = (props) => {
 
-    
+  const [showDialog, setShowDialog] = useState(false);
+
+  const handleClickOpen = () => {
+    setShowDialog(true);
+  };
+
+  const handleClose = (status) => {
+    setShowDialog(status);
+  }; 
     
 
   return (
@@ -19,10 +28,10 @@ const Drawer = (props) => {
           <div className={props.status?'':'link-text'}>Home</div>
         </NavLink>
         {/* <NavLink  to="/model" className='d-flex align-items-center nav-link justify-content-center'> */}
-        <NavLink  to="/model" className={props.status?'nav-link':'nav-link nav-link-collapse'}>
+        <div className={props.status?'nav-link':'nav-link nav-link-collapse'} onClick={()=> handleClickOpen()}>
           <TiDocumentText className={props.status?'icon':'icon-collapse'}/> 
           <div className={props.status?'':'link-text'}>Post Requests</div>
-        </NavLink>
+        </div>
         <NavLink to='/requests' className={props.status?'nav-link':'nav-link nav-link-collapse'}>
           <BiGitPullRequest className={props.status?'icon':'icon-collapse'}/> 
           <div className={props.status?'':'link-text'}>Requests</div>
@@ -36,6 +45,7 @@ const Drawer = (props) => {
           <div className={props.status?'':'link-text'}>Contact Us</div>
         </NavLink>
 
+        <RequestDialog showDialog={showDialog} status={handleClose} />
 
         {/* <NavLink to='/posts' className='d-flex align-items-center nav-link'>
           <FaHome className={props.status?'icon':'icon-collapse'}/> 
